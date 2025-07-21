@@ -1,33 +1,45 @@
-import Logo from "../assets/bitcoin.png"
 import { useConnectWallet } from "../services/useConnectWallet";
 import { useWalletStore } from "@/store/useWalletStore";
+import Container from "./Container";
+import Button from "./Button";
 
 export default function Navbar() {
   const { connect } = useConnectWallet();
   const { connected } = useWalletStore();
 
-  return(
+  return (
     <nav
-      className="flex justify-center items-center"
+      className="flex justify-center bg-[#0b0d11] py-3 items-center fixed top-0 left-0 right-0 "
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="flex justify-between items-center w-[1200px]">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="/">
-          <img src={Logo} alt="Logo" className="w-[50px]" />
-        </a>
-      </div>
-        <ul className="flex gap-2 items-center">
-          <li className="navbar-item">
-            <a href="/about">About</a>
-          </li>
-          <li className="navbar-item">
-            <a href="/contact">Contact</a>
-          </li>
-          <button className="bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded-xl text-white font-bold cursor-pointer" onClick={() => connect()}> {connected ? 'Connected' : 'Connect Wallet'} </button>
+      <Container className="justify-between items-center">
+        {/* Icon logo */}
+        <div className="flex items-center gap-x-2">
+          <img
+            src="logo-blue.png"
+            alt="Krisfy Logo"
+            width={35}
+            className="rounded-full aspect-square"
+          />
+          <span className="bg-gradient-to-r from-[#3a62ff] via-[#7044fb] to-[#9a27ff] bg-clip-text text-transparent font-bold text-xl">
+            Krisfy
+          </span>
+        </div>
+
+        {/* Menu */}
+        <ul className="flex items-center gap-x-10 text-white text-sm">
+          <li className="hover:underline cursor-pointer">Products</li>
+          <li className="hover:underline cursor-pointer">Resources</li>
+          <li className="hover:underline cursor-pointer">Developers</li>
         </ul>
-      </div>
+
+        {/*  */}
+        <div className="flex items-center gap-x-4">
+          <i className="ri-search-line cursor-pointer text-white text-3xl"></i>
+          <Button>Open App</Button>
+        </div>
+      </Container>
     </nav>
-  )
+  );
 }
