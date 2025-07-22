@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "clsx": "^2.1.1",
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "remixicon": "^4.6.0",
     "tailwindcss": "^4.1.11",
     "viem": "^2.31.7",
     "wouter": "^3.7.1",
