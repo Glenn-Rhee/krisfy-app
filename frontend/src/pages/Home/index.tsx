@@ -263,6 +263,103 @@ const Home = () => {
           </div>
         </Container>
       </section>
+
+      {/* How it works */}
+      <section className="from-[#0e162b] bg-gradient-to-b to-[#1C283C] mt-10">
+        <Container className="mx-auto py-10 flex-col gap-y-10">
+          <div className="space-y-2 w-full flex items-center flex-col">
+            <h2 className="text-4xl font-bold text-white">
+              Cara Kerja <TextGradient text="Platform" />
+            </h2>
+            <p className="text-white text-center text-lg max-w-2xl">
+              Mulai earning dari aset crypto Anda dalam 4 langkah mudah
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="grid grid-cols-4 gap-x-5">
+            <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border relative">
+              <div className="absolute -top-4 -right-4 text-white text-sm font-medium bg-gradient-to-r from-[#3A7CFF] to-[#A54DFF] flex items-center justify-center h-8 w-8 rounded-full">
+                1
+              </div>
+              <div className="flex w-12 h-12 items-center justify-center p-2 bg-gradient-to-br from-[#2585ff] to-[#00b1e0] rounded-lg">
+                <i className="ri-wallet-line text-xl text-white"></i>
+              </div>
+              <span className="text-white font-semibold text-lg">
+                Connect Wallet
+              </span>
+              <p className="text-white font-light text-center">
+                Hubungkan wallet crypto Anda (MetaMask, WalletConnect, atau
+                Coinbase Wallet) dengan platform kami.
+              </p>
+            </div>
+
+            <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border relative">
+              <div className="absolute -top-4 -right-4 text-white text-sm font-medium bg-gradient-to-r from-[#3A7CFF] to-[#A54DFF] flex items-center justify-center h-8 w-8 rounded-full">
+                2
+              </div>
+              <div className="flex w-12 h-12 items-center justify-center p-2 bg-gradient-to-br from-[#00c856] to-[#00bd79] rounded-lg">
+                <i className="ri-money-dollar-circle-line text-2xl text-white"></i>
+              </div>
+              <span className="text-white font-semibold text-lg">
+                Deposit Assets
+              </span>
+              <p className="text-white font-light text-center">
+                Deposit aset crypto pilihan Anda ke dalam smart contract yang
+                telah diaudit untuk keamanan maksimal.
+              </p>
+            </div>
+
+            <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border relative">
+              <div className="absolute -top-4 -right-4 text-white text-sm font-medium bg-gradient-to-r from-[#3A7CFF] to-[#A54DFF] flex items-center justify-center h-8 w-8 rounded-full">
+                3
+              </div>
+              <div className="flex w-12 h-12 items-center justify-center p-2 bg-gradient-to-br from-[#b148ff] to-[#f138a2] rounded-lg">
+                <i className="ri-stock-line text-xl text-white"></i>
+              </div>
+              <span className="text-white font-semibold text-lg">
+                Earn or Borrow
+              </span>
+              <p className="text-white font-light text-center">
+                Pilh untuk lend dan dapatkan yield otomatis, atau gunakan
+                sebagai kolateral untuk meminjam aset lain.
+              </p>
+            </div>
+
+            <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border relative">
+              <div className="absolute -top-4 -right-4 text-white text-sm font-medium bg-gradient-to-r from-[#3A7CFF] to-[#A54DFF] flex items-center justify-center h-8 w-8 rounded-full">
+                4
+              </div>
+              <div className="flex w-12 h-12 items-center justify-center p-2 bg-gradient-to-r from-[#FF6700] to-[#FB2D36] rounded-lg">
+                <i className="ri-shield-line text-xl text-white"></i>
+              </div>
+              <span className="text-white font-semibold text-lg">
+                Manage & Withdraw
+              </span>
+              <p className="text-white font-light text-center">
+                Monitor portofolio real-time dan withdraw kapan saja tanpa lock
+                period atau penalty fees.
+              </p>
+            </div>
+          </div>
+
+          <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border">
+            <span className="text-2xl font-bold text-white">
+              Siap memulai Perjalanan DeFi Anda?
+            </span>
+            <p className="text-white max-w-2xl text-center">
+              Bergabung dengan 150.000+ pengguna yang telah mempercayai platform
+              kami untuk memaksimalkan potensi crypto mereka.
+            </p>
+            <div className="flex items-center gap-x-4">
+              <Button className="py-2 px-6">Start Earning Now</Button>
+              <button className="py-2 px-5 font-semibold rounded-2xl cursor-pointer bg-transparent border border-[#2656A3] text-[#4F9EF8]">
+                View Documentation
+              </button>
+            </div>
+          </div>
+        </Container>
+      </section>
     </div>
   );
 };
