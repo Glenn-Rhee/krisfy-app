@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="flex justify-center z-10 bg-[#0b0d11] py-3 items-center fixed top-0 left-0 right-0 "
+      className="flex justify-center z-20 bg-[#0b0d11] py-3 items-center fixed top-0 left-0 right-0 "
       role="navigation"
       aria-label="main navigation"
     >

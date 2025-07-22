@@ -18,9 +18,9 @@ const Home = () => {
             </h1>
 
             <p className="text-white text-xl">
-              Krisfy adalah platform DeFi terdepan untuk memaksimalkan nilai
-              aset crypto Anda. Lend, borrow, dan earn dengan keamanan tingkat
-              institusi dan yield yang kompetitif.
+              Krisfy is the leading DeFi platform to maximize the value of your
+              crypto assets. Lend, borrow, and earn with institutional-grade
+              security and competitive yields.
             </p>
 
             <div className="flex items-center gap-x-6">
@@ -93,55 +93,55 @@ const Home = () => {
               <div className="flex flex-col relative z-10 gap-y-4">
                 <div className="bg-[#23274faf] border border-[#2c2f4f] flex items-center justify-between p-3 rounded-xl">
                   <div className="flex items-center gap-x-2">
-                    <span className="w-8 h-8 bg-[#fb6600] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                      B
+                    <span className="w-8 h-8 bg-gradient-to-r from-[#B360FF] to-[#9E30FC] rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                      I
                     </span>
                     <div className="flex text-white flex-col">
-                      <span className="font-semibold text-lg">BTC</span>
-                      <span className="text-xs">8.1% APY</span>
+                      <span className="font-semibold text-lg">ICP</span>
+                      <span className="text-xs">13.1% APY</span>
                     </div>
                   </div>
                   <div className="flex flex-col items-end">
                     <span className="font-semibold text-white text-lg">
-                      $48389
+                      $41658
                     </span>
-                    <span className="text-[#05DD72]">+1.5%</span>
+                    <span className="text-[#05DD72]">+2.7%</span>
                   </div>
                 </div>
 
                 <div className="bg-[#23274faf] border border-[#2c2f4f] flex items-center justify-between p-3 rounded-xl">
                   <div className="flex items-center gap-x-2">
-                    <span className="w-8 h-8 bg-[#fb6600] rounded-full flex items-center justify-center text-white text-sm font-semibold">
-                      E
+                    <span className="w-8 h-8 bg-gradient-to-br from-[#CB6CE7] to-[#e12d90] rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                      S
                     </span>
                     <div className="flex text-white flex-col">
-                      <span className="font-semibold text-lg">ETH</span>
-                      <span className="text-xs">12.9% APY</span>
+                      <span className="font-semibold text-lg">SOL</span>
+                      <span className="text-xs">11.5% APY</span>
                     </div>
                   </div>
                   <div className="flex flex-col items-end">
                     <span className="font-semibold text-white text-lg">
-                      $48114
+                      $17475
                     </span>
-                    <span className="text-[#05DD72]">+3.9%</span>
+                    <span className="text-[#05DD72]">+3.8%</span>
                   </div>
                 </div>
 
                 <div className="bg-[#23274faf] border border-[#2c2f4f] flex items-center justify-between p-3 rounded-xl">
                   <div className="flex items-center gap-x-2">
-                    <span className="w-8 h-8 bg-[#fb6600] rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                    <span className="w-8 h-8 bg-gradient-to-br from-[#4496FF] to-[#1E6AFE] rounded-full flex items-center justify-center text-white text-sm font-semibold">
                       U
                     </span>
                     <div className="flex text-white flex-col">
                       <span className="font-semibold text-lg">USDC</span>
-                      <span className="text-xs">14.3% APY</span>
+                      <span className="text-xs">14.7% APY</span>
                     </div>
                   </div>
                   <div className="flex flex-col items-end">
                     <span className="font-semibold text-white text-lg">
-                      $55593
+                      $43805
                     </span>
-                    <span className="text-[#05DD72]">+3.8%</span>
+                    <span className="text-[#05DD72]">+4.1%</span>
                   </div>
                 </div>
               </div>
@@ -155,90 +155,98 @@ const Home = () => {
         <Container className="mx-auto py-10 flex-col gap-y-4">
           <div className="space-y-2 w-full flex items-center flex-col">
             <h2 className="text-4xl font-bold text-white">
-              Mengapa Memilih <TextGradient text="Krisfy" />
+              Why Choose <TextGradient text="Krisfy" />
             </h2>
             <p className="text-white text-center text-lg max-w-2xl">
-              Platform DeFi paling aman dan menguntungkan untuk memaksimalkan
-              potensi aset crypto Anda
+              The most secure and profitable DeFi platform to maximize your
+              crypto asset potential.
             </p>
           </div>
 
           {/* Cards */}
           <div className="grid grid-cols-3 gap-y-5 gap-x-6 mt-8">
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-br from-[#2585ff] to-[#00b1e0] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex relative z-10 w-10 h-10 items-center justify-center p-2 bg-gradient-to-br from-[#2585ff] to-[#00b1e0] rounded-lg">
                 <i className="ri-shield-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">
-                Security Terdepan
+              <h6 className="font-semibold relative z-10 text-white text-xl">
+                Advanced Security
               </h6>
-              <p className="text-white font-light">
-                Smart contract yang telah diaudit dengan sistem keamanan
-                multi-layer dan asuransi dana pengguna.
+              <p className="text-white font-light relative z-10">
+                Audited smart contracts with multi-layer security systems and
+                user fund insurance protection.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
 
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-r from-[#00c856] to-[#00bd79] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex w-10 h-10 relative z-10 items-center justify-center p-2 bg-gradient-to-r from-[#00c856] to-[#00bd79] rounded-lg">
                 <i className="ri-stock-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">
-                Yield Kompetitif
+              <h6 className="font-semibold relative z-10 text-white text-xl">
+                Competitive Yields
               </h6>
-              <p className="text-white font-light">
-                Dapatkan hingga 15% APY untuk lending dan akses pinjaman dengan
-                bunga rendah mulai dari 3% APR.
+              <p className="text-white font-light relative z-10">
+                Earn up to 15% APY for lending and access low-interest loans
+                starting from 3% APR.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
 
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-r from-[#f2ab00] to-[#ff7400] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex w-10 h-10 relative z-10 items-center justify-center p-2 bg-gradient-to-r from-[#f2ab00] to-[#ff7400] rounded-lg">
                 <i className="ri-flashlight-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">
+              <h6 className="font-semibold relative z-10 text-white text-xl">
                 Instant Settlement
               </h6>
-              <p className="text-white font-light">
-                Transaksi real-time tanpa waiting period. Lend, borrow, dan
-                withdraw kapan saja 24/7.
+              <p className="text-white relative z-10 font-light">
+                Real-time transactions with no waiting period. Lend, borrow, and
+                withdraw anytime 24/7.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
 
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-r from-[#b148ff] to-[#f138a2] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex w-10 h-10 relative z-10 items-center justify-center p-2 bg-gradient-to-r from-[#b148ff] to-[#f138a2] rounded-lg">
                 <i className="ri-global-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">
+              <h6 className="font-semibold relative z-10 text-white text-xl">
                 Multi-Chain Support
               </h6>
-              <p className="text-white font-light">
-                Dukung berbagai blockchain termasuk Ethereum, BSC, Polygon
-                dengan 50+ aset crypto.
+              <p className="text-white relative z-10 font-light">
+                Support for various blockchains including Ethereum, BSC, Polygon
+                with 50+ crypto assets.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
 
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-r from-[#6060ff] to-[#327CFF] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex w-10 h-10 relative z-10 items-center justify-center p-2 bg-gradient-to-r from-[#6060ff] to-[#327CFF] rounded-lg">
                 <i className="ri-lock-2-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">
+              <h6 className="font-semibold relative z-10 text-white text-xl">
                 Non-Custodial
               </h6>
-              <p className="text-white font-light">
-                Kendali penuh atas aset Anda. Private key tetap di tangan Anda
-                dengan teknologi DeFi.
+              <p className="text-white relative z-10 font-light">
+                Full control over your assets. Private keys remain in your hands
+                with DeFi technology.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
 
-            <div className="p-4 bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
-              <div className="flex w-10 h-10 items-center justify-center p-2 bg-gradient-to-r from-[#FF2055] to-[#FB2C38] rounded-lg">
+            <div className="p-4 group relative hover:scale-[1.05] duration-100 transition bg-[#23274faf] rounded-lg flex flex-col gap-y-3 border-[#2c2f4f] border">
+              <div className="flex w-10 h-10 relative z-10 items-center justify-center p-2 bg-gradient-to-r from-[#FF2055] to-[#FB2C38] rounded-lg">
                 <i className="ri-smartphone-line text-lg text-white"></i>
               </div>
-              <h6 className="font-semibold text-white text-xl">Mobile First</h6>
-              <p className="text-white font-light">
-                Aplikasi mobile yang intuitive untuk Android dan iOS. Trading
-                crypto lending di mana saja.
+              <h6 className="font-semibold relative z-10 text-white text-xl">
+                Mobile First
+              </h6>
+              <p className="text-white relative z-10 font-light">
+                Intuitive mobile app for Android and iOS. Trade crypto lending
+                anywhere, anytime.
               </p>
+              <div className="absolute transition-all duration-200 group-hover:bg-gradient-to-r bg-transparent inset-0 from-indigo-600 to-purple-600 blur-lg opacity-40"></div>{" "}
             </div>
           </div>
 
@@ -269,10 +277,10 @@ const Home = () => {
         <Container className="mx-auto py-10 flex-col gap-y-10">
           <div className="space-y-2 w-full flex items-center flex-col">
             <h2 className="text-4xl font-bold text-white">
-              Cara Kerja <TextGradient text="Platform" />
+              How The <TextGradient text="Platform Works" />
             </h2>
             <p className="text-white text-center text-lg max-w-2xl">
-              Mulai earning dari aset crypto Anda dalam 4 langkah mudah
+              Start earning from your crypto assets in 4 easy steps.
             </p>
           </div>
 
@@ -289,8 +297,8 @@ const Home = () => {
                 Connect Wallet
               </span>
               <p className="text-white font-light text-center">
-                Hubungkan wallet crypto Anda (MetaMask, WalletConnect, atau
-                Coinbase Wallet) dengan platform kami.
+                Connect your crypto wallet (MetaMask, WalletConnect, or Coinbase
+                Wallet) with our platform.
               </p>
             </div>
 
@@ -305,8 +313,8 @@ const Home = () => {
                 Deposit Assets
               </span>
               <p className="text-white font-light text-center">
-                Deposit aset crypto pilihan Anda ke dalam smart contract yang
-                telah diaudit untuk keamanan maksimal.
+                Deposit your chosen crypto assets into audited smart contracts
+                for maximum security.
               </p>
             </div>
 
@@ -321,8 +329,8 @@ const Home = () => {
                 Earn or Borrow
               </span>
               <p className="text-white font-light text-center">
-                Pilh untuk lend dan dapatkan yield otomatis, atau gunakan
-                sebagai kolateral untuk meminjam aset lain.
+                Choose to lend and earn automatic yields, or use as collateral
+                to borrow other assets.
               </p>
             </div>
 
@@ -337,19 +345,19 @@ const Home = () => {
                 Manage & Withdraw
               </span>
               <p className="text-white font-light text-center">
-                Monitor portofolio real-time dan withdraw kapan saja tanpa lock
-                period atau penalty fees.
+                Monitor your portfolio in real-time and withdraw anytime without
+                lock periods or penalty fees.
               </p>
             </div>
           </div>
 
           <div className="p-4 bg-[#1d293d] rounded-lg items-center flex flex-col gap-y-3 border-[#2c2f4f] border">
             <span className="text-2xl font-bold text-white">
-              Siap memulai Perjalanan DeFi Anda?
+              Ready to Start Your DeFi Journey?
             </span>
             <p className="text-white max-w-2xl text-center">
-              Bergabung dengan 150.000+ pengguna yang telah mempercayai platform
-              kami untuk memaksimalkan potensi crypto mereka.
+              Join 150,000+ users who have trusted our platform to maximize
+              their crypto potential.
             </p>
             <div className="flex items-center gap-x-4">
               <Button className="py-2 px-6">Start Earning Now</Button>
