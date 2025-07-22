@@ -5,6 +5,40 @@ import TextGradient from "@/components/LandingPage/TextGradient";
 
 const Home = () => {
   // const { address, balance } = useWalletStore();
+  const questionsNAnswers = [
+    {
+      q: "What is crypto lending and how does it work?",
+      a: "Crypto lending is the process of lending your cryptocurrency assets to other borrowers and earning interest as a return. Our platform uses smart contracts to automate this process, ensuring security and transparency. You can earn yields up to 15% APY from the assets you lend.",
+    },
+    {
+      q: "Are my funds safe on this platform?",
+      a: "Yes, security is our top priority. All smart contracts have been audited by leading security firms. We use a non-custodial system, meaning you retain full control over your private keys. Additionally, our platform is equipped with fund insurance and multi-layer security systems.",
+    },
+    {
+      q: "What is the minimum deposit to start lending?",
+      a: "Minimum deposits vary depending on the asset type. For Bitcoin minimum $100, Ethereum $50, and stablecoins like USDC minimum $25. We are committed to making DeFi accessible to everyone.",
+    },
+    {
+      q: "Is there a lock period for funds I lend?",
+      a: "There is no lock period for lending on our platform. You can withdraw funds anytime 24/7. However, for optimal yields, we recommend holding for at least 30 days.",
+    },
+    {
+      q: "Which cryptocurrencies are supported?",
+      a: "We support 50+ cryptocurrency assets including Bitcoin (BTC), Ethereum (ETH), all major stablecoins (USDC, USDT, DAI), DeFi tokens (UNI, AAVE, COMP), and many popular altcoins. The complete list is available on the Markets page.",
+    },
+    {
+      q: "How is the interest I earn calculated?",
+      a: "Interest is calculated as compound daily based on APY (Annual Percentage Yield). Rates are dynamic following market supply-demand. You can monitor earnings in real-time on the dashboard and see earning projections in our calculator.",
+    },
+    {
+      q: "Are there any hidden fees?",
+      a: "Transparency is key. There are no deposit or withdrawal fees. We only charge a 10% platform fee from the yields you earn. All fee structures are available on the Pricing page and clearly displayed before each transaction.",
+    },
+    {
+      q: "What if I want to borrow crypto?",
+      a: "You can use crypto assets as collateral to borrow other assets. Maximum Loan-to-Value (LTV) ratio is 75%. Interest rates start from 3% APR depending on collateral assets. Liquidation occurs automatically if collateral value drops below maintenance margin",
+    },
+  ];
 
   return (
     <div className="bg-[#0e162b]">
@@ -364,6 +398,48 @@ const Home = () => {
               <button className="py-2 px-5 font-semibold rounded-2xl cursor-pointer bg-transparent border border-[#2656A3] text-[#4F9EF8]">
                 View Documentation
               </button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section>
+        <Container className="mx-auto py-10 flex-col">
+          <div className="flex flex-col gap-y-3 items-center">
+            <h2 className="text-4xl font-bold text-white text-center">
+              Frequently Asked <TextGradient text="Questions" />
+            </h2>
+            <p className="text-white text-center text-lg max-w-3xl">
+              Find answears to the most frequently asked questions about our
+              crypto lending platform.
+            </p>
+          </div>
+
+          <div className="gap-y-2 mt-10">
+            <div className="mx-auto flex flex-col gap-y-4 max-w-3xl">
+              {questionsNAnswers.map((item) => (
+                <button className="flex w-full cursor-pointer transition-all justify-between mx-auto max-w-3xl text-white bg-[#151F33] hover:bg-[#1E2A3E] items-center py-3 px-6 rounded-xl">
+                  <span>{item.q}</span>
+                  <i className="ri-arrow-drop-down-line text-2xl"></i>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-14">
+            <div className="bg-[#151F33] w-full max-w-3xl py-4 px-3 rounded-xl text-white flex items-center flex-col gap-y-3">
+              <h6 className="font-semibold text-xl">Still Have Questions?</h6>
+              <p className="text-sm">
+                Our support team is ready to help you 24/7 via live chatt or
+                email.
+              </p>
+              <div className="flex items-center gap-x-4 mt-1">
+                <Button className="py-2 px-5">Contact Support</Button>
+                <button className="py-2 px-5 font-semibold rounded-2xl cursor-pointer bg-transparent border border-[#2656A3] text-[#4F9EF8]">
+                  Join Community
+                </button>
+              </div>
             </div>
           </div>
         </Container>
