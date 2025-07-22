@@ -1,15 +1,15 @@
-import { useConnectWallet } from "../services/useConnectWallet";
-import { useWalletStore } from "@/store/useWalletStore";
+// import { useConnectWallet } from "../services/useConnectWallet";
+// import { useWalletStore } from "@/store/useWalletStore";
 import Container from "./Container";
 import Button from "./Button";
 
 export default function Navbar() {
-  const { connect } = useConnectWallet();
-  const { connected } = useWalletStore();
+  // const { connect } = useConnectWallet();
+  // const { connected } = useWalletStore();
 
   return (
     <nav
-      className="flex justify-center bg-[#0b0d11] py-3 items-center fixed top-0 left-0 right-0 "
+      className="flex justify-center z-10 bg-[#0b0d11] py-3 items-center fixed top-0 left-0 right-0 "
       role="navigation"
       aria-label="main navigation"
     >
