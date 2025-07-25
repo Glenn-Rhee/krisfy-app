@@ -3,10 +3,13 @@
 import Container from "./Container";
 import Button from "./Button";
 import Popover from "./Popover";
+import { useDisplayStore }  from "@/store/useDisplayStore";
 
 export default function Navbar() {
   // const { connect } = useConnectWallet();
   // const { connected } = useWalletStore();
+  const isVisible = useDisplayStore((state) => state.isVisible);
+  const toggleVisibility = useDisplayStore((state) => state.toggleVisibility);
 
   return (
     <nav
@@ -172,7 +175,8 @@ export default function Navbar() {
         {/*  */}
         <div className="flex items-center gap-x-4">
           <i className="ri-search-line cursor-pointer text-white text-3xl"></i>
-          <Button>Open App</Button>
+          <p className="text-white">Visibility: {isVisible ? 'Visible' : 'Hidden'}</p>
+          <Button onClick={toggleVisibility}>Open App</Button>
         </div>
       </Container>
     </nav>
