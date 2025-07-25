@@ -29,16 +29,20 @@ export default function Popover(props: PopoverProps) {
     };
   }, [handleClickOutside]);
 
-  const togglePopover = () => {
-    setIsOpen((prev) => !prev);
+  const showPopover = () => {
+    setIsOpen(true);
   };
+
+  const hidePopOver = () => {
+    setIsOpen(false);
+  }
 
   return (
     <>
       <button
         ref={triggerRef}
         className="cursor-pointer"
-        onClick={togglePopover}
+        onMouseMove={showPopover}
       >
         {triggerElement}
       </button>
@@ -46,6 +50,7 @@ export default function Popover(props: PopoverProps) {
       {isOpen && (
         <div
           ref={popoverRef}
+          onMouseLeave={hidePopOver}
           className="absolute cursor-auto border-[#2c2f4f] border rounded-xl bg-[#1d293d] top-full left-1/2 z-20 -translate-x-1/2 p-3 w-[20rem]"
         >
           {children}
