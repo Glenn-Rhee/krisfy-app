@@ -1,8 +1,11 @@
 import Container from "./Container";
 import Separator from "./Separator";
+import { useDisplayStore } from "@/store/useDisplayStore";
 
 export default function Footer() {
-  return (
+  const isVisible = useDisplayStore((state) => state.isVisible);
+
+  return !isVisible && (
     <footer className="flex flex-col gap-y-3 bg-[#020618] py-8">
       <Container className="mx-auto flex-col">
         <div className="flex gap-x-1 w-full">

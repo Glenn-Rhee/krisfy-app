@@ -32,6 +32,8 @@ export default function Navbar() {
         </div>
 
         {/* Menu */}
+        {!isVisible ? (
+
         <ul className="flex items-center gap-x-10 text-white text-sm">
           <li className="cursor-pointer flex items-center relative">
             <Popover
@@ -172,11 +174,24 @@ export default function Navbar() {
           </li>
         </ul>
 
+        ):
+          <ul className="flex items-start w-[70%] gap-x-10 text-white text-sm">
+            <li className="font-bold">Dashboard</li>
+            <li className="font-bold text-gray-500">Market</li>
+            <li className="font-bold text-gray-500">Governance</li>
+          </ul>
+        }
+
         {/*  */}
         <div className="flex items-center gap-x-4">
-          <i className="ri-search-line cursor-pointer text-white text-3xl"></i>
-          <p className="text-white">Visibility: {isVisible ? 'Visible' : 'Hidden'}</p>
-          <Button onClick={toggleVisibility}>Open App</Button>
+          {!isVisible ? (
+            <>
+              <i className="ri-search-line cursor-pointer text-white text-3xl"></i>
+              <Button className="hover:cursor-pointer active:scale-95" onClick={toggleVisibility}>Open App</Button>
+            </>
+          ) : (
+            <Button className="hover:cursor-pointer active:scale-95" onClick={toggleVisibility}>Connect Wallet</Button>
+          )}
         </div>
       </Container>
     </nav>

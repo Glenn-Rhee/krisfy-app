@@ -1,11 +1,15 @@
 import LandingPage from "./LandingPage";
+import Dashboard from "./Dashboard";
+import { useDisplayStore } from "@/store/useDisplayStore";
 
 const Home = () => {
-
+  const isVisible = useDisplayStore((state) => state.isVisible);
+  // const toggleVisibility = useDisplayStore((state) => state.toggleVisibility);
 
   return (
    <>
-     <LandingPage />
+     {!isVisible && (<LandingPage />)}
+     {isVisible && (<Dashboard />)}
    </>
   );
 };
