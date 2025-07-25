@@ -1,20 +1,7 @@
 // store/useWalletStore.ts
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-
-type WalletState = {
-  address: `0x${string}` | null;
-  balance: bigint | null;
-  client: any;
-  connecting: boolean;
-  connected: boolean;
-
-  setAddress: (addr: `0x${string}` | null) => void;
-  setBalance: (bal: bigint | null) => void;
-  setClient: (client: any) => void;
-  setConnecting: (val: boolean) => void;
-  setConnected: (val: boolean) => void;
-};
+import { type WalletState } from '@/types/internal';
 
 export const useWalletStore = create<WalletState>()(
   persist(

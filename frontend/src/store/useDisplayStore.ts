@@ -1,10 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-
-type DisplayState = {
-  isVisible: boolean;
-  toggleVisibility: () => void;
-}
+import { type DisplayState } from '@/types/internal';
 
 export const useDisplayStore = create<DisplayState>()(
   persist(
