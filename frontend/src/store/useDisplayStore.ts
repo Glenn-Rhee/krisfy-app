@@ -5,7 +5,7 @@ import { type DisplayState } from '@/types/internal';
 export const useDisplayStore = create<DisplayState>()(
   persist(
     (set) => ({
-      isVisible: false,
+      isVisible: true,
       toggleVisibility: () => set((state) => ({ isVisible: !state.isVisible })),
     }),
     {
