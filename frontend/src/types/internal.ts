@@ -19,4 +19,11 @@ export type WalletState = {
 export type DisplayState = {
   isVisible: boolean;
   toggleVisibility: () => void;
+  isWallet: boolean;
+  toggleWallet: () => void;
+}
+
+export type WalletDisplayState = {
+  isWallet: boolean;
+  toggleWallet: () => void;
 }

@@ -4,12 +4,15 @@ import Container from "./Container";
 import Button from "./Button";
 import Popover from "./Popover";
 import { useDisplayStore }  from "@/store/useDisplayStore";
+import { useWalletDisplayStore } from "@/store/useWalletDisplayStore";
+import WalletCard from "./WalletCard";
 
 export default function Navbar() {
   // const { connect } = useConnectWallet();
   // const { connected } = useWalletStore();
   const isVisible = useDisplayStore((state) => state.isVisible);
   const toggleVisibility = useDisplayStore((state) => state.toggleVisibility);
+  const { toggleWallet } = useWalletDisplayStore();
 
   return (
     <nav
@@ -17,6 +20,7 @@ export default function Navbar() {
       role="navigation"
       aria-label="main navigation"
     >
+      <WalletCard />
       <Container className="justify-between items-center">
         {/* Icon logo */}
         <div className="flex items-center gap-x-2">
@@ -190,7 +194,7 @@ export default function Navbar() {
               <Button className="hover:cursor-pointer active:scale-95" onClick={toggleVisibility}>Open App</Button>
             </>
           ) : (
-            <Button className="hover:cursor-pointer active:scale-95" onClick={toggleVisibility}>Connect Wallet</Button>
+            <Button className="hover:cursor-pointer active:scale-95" onClick={toggleWallet}>Connect Wallet</Button>
           )}
         </div>
       </Container>
